@@ -11,7 +11,7 @@ module.exports = function(app) {
         res.json();
     })
   })
-}
+
 
 app.get('/find/:tiny_url', (req, res) => {
   db.Url.findOne({ where: { tiny_url: req.params.tiny_url }
